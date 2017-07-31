@@ -1,5 +1,4 @@
-\# Python web application running on Docker Compose. The web application
-uses Flask framework with Redis database.
+# Python web application running on Docker Compose. The web application uses Flask framework with Redis database.
 
 Prerequisites
 
@@ -16,13 +15,13 @@ Prerequisites
 
 4.  Clone the repository onto project directory
 
-    -   Fsjhsd
+    -   https://github.com/nitish2611/Python-web-application-docker-compose.git
 
 File Information:
 
 1.  App.py: Flask application
 
-    1.  Connects to Redis database on port 8080
+    1.  Connects to Redis database
 
     2.  Checks if Redis is running else 500 exception handled and logged
         in redis.log
@@ -69,5 +68,9 @@ File Information:
 Build and run application using compose
 
 1.  Docker-compose up
+    1.  redis_1  | 1:M 31 Jul 07:01:22.490 * DB loaded from disk: 0.000 seconds
+        redis_1  | 1:M 31 Jul 07:01:22.490 * Ready to accept connections
+        web_1    |  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2.  In browser or curl http://127.0.0.1:8080
 
 
