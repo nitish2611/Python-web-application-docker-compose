@@ -1,0 +1,10 @@
+version: '2'
+services:
+  web:
+    build: . #Use image built from Dockerfile into current directory
+    ports:
+     - "8080:8080" #Forward exposed port 8080 on container to port 8080 on host machine 
+    volumes:
+     - .:/code #Mount the project directory on host to /code inside container
+  redis:
+    image: "redis:alpine" #The redis service uses a public Redis image pulled from the Docker Hub registry.
